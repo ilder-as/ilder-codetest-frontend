@@ -23,11 +23,12 @@ export const TodoForm = ({ onSubmit }: TodoFormProps) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Add a new todo..."
-        className="flex-1 px-4 py-3 rounded"
+        className="flex-1 rounded"
       />
       <button
         type="submit"
         className="bg-blue-500 text-white rounded px-6 py-3 hover:bg-blue-600"
+        style={{ fontSize: "1.125rem" }}
       >
         Add
       </button>

@@ -4,6 +4,7 @@
   font-weight: 400;
   color: #1a1a1a;
   background-color: #ffffff;
+  font-size: 16px;
 }
 
 a {
@@ -30,6 +31,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  font-size: 1rem;
 }
 
 @media (prefers-color-scheme: light) {
@@ -106,11 +108,11 @@ button {
 }
 
 .gap-2 {
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .mb-4 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .flex-1 {
@@ -136,8 +138,18 @@ button {
 }
 
 .px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-6 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .bg-blue-500 {
@@ -189,6 +201,8 @@ input[type="text"] {
   background-color: #ffffff;
   color: #1a1a1a;
   border: 1px solid #e5e7eb;
+  font-size: 1.125rem;
+  padding: 0.875rem 1.25rem;
 }
 
 input[type="text"]::placeholder {
@@ -201,10 +215,11 @@ input[type="text"]:focus {
 }
 
 input[type="checkbox"] {
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 0.25rem;
-  border: 1px solid #e5e7eb;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
 }
 
 button:focus {
@@ -216,10 +231,16 @@ button.delete {
   background-color: #fee2e2;
   color: #dc2626;
   border-radius: 0.375rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   transition: background-color 0.2s;
 }
 
 button.delete:hover {
   background-color: #fecaca;
+}
+
+.todo-text {
+  font-size: 1.125rem;
+  padding: 0.5rem 0;
 }
