@@ -4,19 +4,13 @@ import { Todo } from "./Todo";
 interface TodoListProps {
   todos: TodoType[];
   onToggle: (id: number) => void;
-  onDelete: (id: number) => void;
 }
 
-export const TodoList = ({ todos, onToggle, onDelete }: TodoListProps) => {
+export const TodoList = ({ todos, onToggle }: TodoListProps) => {
   return (
     <div className="space-y-2">
       {todos.map((todo) => (
-        <Todo
-          key={todo.id}
-          todo={todo}
-          onToggle={onToggle}
-          onDelete={onDelete}
-        />
+        <Todo key={todo.id} todo={todo} onToggle={onToggle} />
       ))}
       {todos.length === 0 && (
         <p className="text-gray-500 text-center py-4">

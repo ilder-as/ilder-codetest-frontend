@@ -24,10 +24,6 @@ function App() {
     );
   };
 
-  const handleDeleteTodo = (id: number) => {
-    setTodos((prev) => prev.filter((todo) => todo.id !== id));
-  };
-
   return (
     <div
       style={{
@@ -38,11 +34,7 @@ function App() {
     >
       <div style={{ maxWidth: "800px", margin: "0 auto" }}>
         <TodoForm onSubmit={handleAddTodo} />
-        <TodoList
-          todos={todos}
-          onToggle={handleToggleTodo}
-          onDelete={handleDeleteTodo}
-        />
+        <TodoList todos={todos} onToggle={handleToggleTodo} />
       </div>
     </div>
   );
